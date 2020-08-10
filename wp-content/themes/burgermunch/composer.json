@@ -19,7 +19,8 @@
 		"wp-coding-standards/wpcs": "^2.3",
 		"wptrt/wpthemereview": "*",
 		"dealerdirect/phpcodesniffer-composer-installer": "^0.6",
-		"php-parallel-lint/php-parallel-lint": "^1.2"
+		"php-parallel-lint/php-parallel-lint": "^1.2",
+		"php-stubs/wordpress-stubs": "^5.4"
 	},
 	"scripts": {
 		"check:cs": ["@php ./vendor/squizlabs/php_codesniffer/bin/phpcs"],
