@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Name: Home
  *
@@ -8,10 +9,14 @@
  */
 
 // Exit if accessed directly.
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
 get_header();
 ?>
+
+<section class="home-main-carousel">
+
+</section>
 
 <?php
 get_footer();

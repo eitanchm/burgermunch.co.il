@@ -1,20 +1,39 @@
 $secondary: #f4ebb5;
+$navbar-height: 7.5rem;
 
 body {
-	color: #ffffff;
+	background-color: #ffffff;
 }
 
 #main-nav {
-	height: 7.5rem;
+	height: $navbar-height;
 	background-color: $secondary;
+
 	#main-menu {
+		padding-right: 0;
+
 		li {
-			padding: 1rem 0.5rem;
+			padding: 0.5rem 1rem;
+
 			a {
-                color: #51312d;
-                font-size: 2rem;
-                font-weight: bold;
+				color: #51312d;
+				font-size: 1.5rem;
+				font-weight: bold;
 			}
+		}
+
+		li:first-child {
+			padding-right: 0;
+		}
+	}
+
+	.navbar-brand {
+		max-height: 100%;
+		display: flex;
+
+		img {
+			object-fit: contain;
+			display: flex;
 		}
 	}
 }
