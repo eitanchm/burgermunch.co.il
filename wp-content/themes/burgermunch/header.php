@@ -53,10 +53,7 @@ $container = get_theme_mod('understrap_container_type');
                         )
                     );
                     ?>
-                <?php if ('container' === $container) : ?>
-        </div><!-- .container -->
-        <?php endif; ?>
 
-        </nav><!-- .site-navigation -->
+            </nav><!-- .site-navigation -->
 
-    </div><!-- #wrapper-navbar end -->
+        </div><!-- #wrapper-navbar end -->

@@ -1,1 +1,20 @@
-// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+$secondary: #f4ebb5;
+
+body {
+	color: #ffffff;
+}
+
+#main-nav {
+	height: 7.5rem;
+	background-color: $secondary;
+	#main-menu {
+		li {
+			padding: 1rem 0.5rem;
+			a {
+                color: #51312d;
+                font-size: 2rem;
+                font-weight: bold;
+			}
+		}
+	}
+}
