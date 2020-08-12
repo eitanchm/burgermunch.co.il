@@ -58,3 +58,28 @@ body {
 		}
 	}
 }
+
+.home-card-section {
+	align-items: center;
+	justify-content: center;
+
+	.card {
+		max-height: 16rem;
+		max-width: 16rem;
+		margin: 3rem;
+		width: 10rem;
+		height: 10rem;
+		display: flex;
+		align-items: center;
+		justify-items: center;
+		border-radius: 50%;
+	}
+
+	.yellow-card {
+		background-color: #f1bd48;
+	}
+
+	.brown-card {
+		background-color: #51312d;
+	}
+}

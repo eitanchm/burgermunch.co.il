@@ -20,5 +20,20 @@ get_header();
     </div>
 </section>
 
+<section class="home-card-section row">
+    <div class="card brown-card col-sm4">
+        <i class="fas fa-hamburger card-icon"></i>
+    </div>
+    <div class="card yellow-card col-sm4">
+        <i class="fas fa-hamburger card-icon"></i>
+    </div>
+    <div class="card brown-card col-sm4">
+        <i class="fas fa-hamburger card-icon"></i>
+    </div>
+    <div class="card yellow-card col-sm4">
+        <i class="fas fa-hamburger card-icon"></i>
+    </div>
+</section>
+
 <?php
 get_footer();
