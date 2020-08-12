@@ -1,19 +1,23 @@
 $secondary: #f4ebb5;
-$navbar-height: 7.5rem;
+$navbar-height: 6rem;
 
 body {
 	background-color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 #main-nav {
 	height: $navbar-height;
 	background-color: $secondary;
+	display: flex;
 
 	#main-menu {
 		padding-right: 0;
+		display: flex;
+		align-items: center;
 
 		li {
-			padding: 0.5rem 1rem;
+			padding: 0 1rem;
 
 			a {
 				color: #51312d;
@@ -25,6 +29,15 @@ body {
 		li:first-child {
 			padding-right: 0;
 		}
+
+		li:last-child {
+			a {
+				color: $secondary;
+				background-color: #51312d;
+				padding: 0.3rem 1.5rem;
+				border-radius: 2rem;
+			}
+		}
 	}
 
 	.navbar-brand {
@@ -34,6 +47,14 @@ body {
 		img {
 			object-fit: contain;
 			display: flex;
+		}
+	}
+}
+
+.home-main-carousel {
+	.home-banner {
+		.banner-img {
+			min-width: 100%;
 		}
 	}
 }
