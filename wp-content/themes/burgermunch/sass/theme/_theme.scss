@@ -1,1 +1,60 @@
-// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+$secondary: #f4ebb5;
+$navbar-height: 6rem;
+
+body {
+	background-color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-nav {
+	height: $navbar-height;
+	background-color: $secondary;
+	display: flex;
+
+	#main-menu {
+		padding-right: 0;
+		display: flex;
+		align-items: center;
+
+		li {
+			padding: 0 1rem;
+
+			a {
+				color: #51312d;
+				font-size: 1.5rem;
+				font-weight: bold;
+			}
+		}
+
+		li:first-child {
+			padding-right: 0;
+		}
+
+		li:last-child {
+			a {
+				color: $secondary;
+				background-color: #51312d;
+				padding: 0.3rem 1.5rem;
+				border-radius: 2rem;
+			}
+		}
+	}
+
+	.navbar-brand {
+		max-height: 100%;
+		display: flex;
+
+		img {
+			object-fit: contain;
+			display: flex;
+		}
+	}
+}
+
+.home-main-carousel {
+	.home-banner {
+		.banner-img {
+			min-width: 100%;
+		}
+	}
+}
