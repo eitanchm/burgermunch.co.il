@@ -31,7 +31,7 @@ get_header();
             </div>
         </div>
     </a>
-    <a href="/תפריט" class="card-link">
+    <a href="/צור-קשר" class="card-link">
         <div class="card yellow-card col-sm4">
             <i class="fa fa-check-circle card-icon"></i>
             <div class="text-wrap">
@@ -41,7 +41,7 @@ get_header();
             </div>
         </div>
     </a>
-    <a href="/תפריט" class="card-link">
+    <a href="/החדשים" class="card-link">
         <div class="card brown-card col-sm4">
             <i class="fa fa-check-circle card-icon"></i>
             <div class="text-wrap">
@@ -51,7 +51,7 @@ get_header();
             </div>
         </div>
     </a>
-    <a href="/תפריט" class="card-link">
+    <a href="/צור-קשר" class="card-link">
         <div class="card yellow-card col-sm4">
             <i class="fa fa-check-circle card-icon"></i>
             <div class="text-wrap">
