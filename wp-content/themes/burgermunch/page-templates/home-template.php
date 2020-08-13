@@ -14,11 +14,17 @@ defined('ABSPATH') || exit;
 get_header();
 ?>
 
+<!-- Start home main image carousel -->
+
 <section class="home-main-carousel">
     <div class="home-banner">
         <img src="<?php echo get_template_directory_uri(); ?>/img/home-banner.jpg" alt="" class="banner-img" />
     </div>
 </section>
+
+<!-- End home main image carousel -->
+
+<!-- Start home card section row -->
 
 <section class="home-card-section row">
     <a href="/תפריט" class="card-link">
@@ -62,6 +68,24 @@ get_header();
         </div>
     </a>
 </section>
+
+<!-- End home card section row -->
+
+<!-- Start home restaurant branch section -->
+
+<section class="home-branches-section">
+    <div class="container-branches">
+        <a href="/סניפים" class="card-link">
+            <div class="circle-branches-button">
+                <p class="top-text">סניפים</p>
+                <br />
+                <p class="bottom-text">למסעדות לחץ כאן</p>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- End home restaurant branch section -->
 
 <?php
 get_footer();

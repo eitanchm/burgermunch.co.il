@@ -1,11 +1,26 @@
 $secondary: #f4ebb5;
-$navbar-height: 6rem;
+$navbar-height: 5rem;
+
+html {
+	height: 100%;
+}
 
 body {
+	height: 100%;
+	overflow-x: hidden;
 	background-color: #ffffff;
 	font-family: Arial, Helvetica, sans-serif;
-	min-height: 100vh;
-	overflow-x: hidden;
+}
+
+// Card link general CSS rules:
+
+.card-link {
+	margin: 0;
+	padding: 0;
+}
+
+.card-link:hover {
+	text-decoration: none;
 }
 
 #main-nav {
@@ -65,15 +80,6 @@ body {
 .home-card-section {
 	justify-content: center;
 
-	.card-link {
-		margin: 0;
-		padding: 0;
-	}
-
-	.card-link:hover {
-		text-decoration: none;
-	}
-
 	.card {
 		margin: 2rem;
 		padding: 1rem 1rem 2.5rem 1rem;
@@ -114,5 +120,48 @@ body {
 
 	.brown-card {
 		background-color: #51312d;
+	}
+}
+
+.home-branches-section {
+	height: 100vh;
+	background-image: url("../img/knife-in-burger.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+
+	.container-branches {
+		width: 100%;
+		display: flex;
+
+		.circle-branches-button {
+			height: 30rem;
+			width: 30rem;
+			margin-top: 50%;
+			margin-right: 20%;
+			background-color: #f1bd48;
+			display: flex;
+			flex-direction: column;
+			border-radius: 50%;
+			padding: 5rem 1rem;
+			text-align: center;
+			justify-content: center;
+
+			.top-text {
+				font-size: 8rem;
+				color: #461712;
+				margin: 0;
+				padding: 0;
+			}
+
+			.bottom-text {
+				font-size: 3rem;
+				background-color: #461712;
+				color: #f1bd48;
+				border-radius: 1rem;
+				padding: 0;
+			}
+		}
 	}
 }
