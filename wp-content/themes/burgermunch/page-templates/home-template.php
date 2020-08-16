@@ -76,16 +76,28 @@ get_header();
 <section class="home-branches-section">
     <div class="container-branches">
         <a href="/סניפים" class="card-link">
-            <div class="circle-branches-button">
-                <p class="top-text">סניפים</p>
-                <br />
-                <p class="bottom-text">למסעדות לחץ כאן</p>
-            </div>
+            <p class="top-text">סניפים</p>
+            <p class="bottom-text">למסעדות לחץ כאן</p>
         </a>
     </div>
 </section>
 
 <!-- End home restaurant branch section -->
+
+<!-- Start home join family section -->
+
+<section class="home-join-family">
+    <div class="headline-rows">
+        <h3 class="top-row">רוצה להיות</h3>
+        <h3 class="middle-row">חלק ממשפחת</h3>
+        <h3 class="bottom-row">בורגר מאנץ'?</h3>
+    </div>
+    <a href="#" class="join-button">
+        להצטרפות
+    </a>
+</section>
+
+<!-- End home join family section -->
 
 <?php
 get_footer();
