@@ -92,12 +92,30 @@ get_header();
         <h3 class="middle-row">חלק ממשפחת</h3>
         <h3 class="bottom-row">בורגר מאנץ'?</h3>
     </div>
-    <a href="#" class="join-button">
-        להצטרפות
-    </a>
+    <a href="#" class="join-button">להצטרפות</a>
+    <img src="<?php echo get_template_directory_uri(); ?>/img/burger-background.png"
+        alt="small-repeated-hamburger-background" class="burger-background" />
 </section>
 
 <!-- End home join family section -->
+
+<!-- Start home join club section -->
+
+<section class="home-join-club">
+    <div class="left-column">
+        <div class="headline-rows">
+            <h3 class="top-row">רוצה להיות</h3>
+            <h3 class="middle-row">חבר מועדון</h3>
+            <h3 class="bottom-row">בורגר מאנץ'?</h3>
+        </div>
+        <a href="#" class="join-button">להצטרפות</a>
+    </div>
+    <div class="right-column">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/VIP.png" alt="" />
+    </div>
+</section>
+
+<!-- End home join club section -->
 
 <?php
 get_footer();

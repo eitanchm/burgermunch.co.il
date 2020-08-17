@@ -1,5 +1,7 @@
 $secondary: #f4ebb5;
 $navbar-height: 6rem;
+$site-yellow: #f1bd48;
+$site-brown: #461712;
 
 html {
 	height: 100%;
@@ -15,6 +17,10 @@ body {
 	line-height: 1.15;
 	margin: 0;
 	padding: 0;
+}
+
+a:hover {
+	text-decoration: none;
 }
 
 #page {
@@ -48,7 +54,7 @@ body {
 			padding: 0 1rem;
 
 			a {
-				color: #51312d;
+				color: $site-brown;
 				font-size: 1.5rem;
 				font-weight: bold;
 			}
@@ -61,7 +67,7 @@ body {
 		li:last-child {
 			a {
 				color: $secondary;
-				background-color: #51312d;
+				background-color: $site-brown;
 				padding: 0.3rem 1.5rem;
 				border-radius: 2rem;
 			}
@@ -126,11 +132,11 @@ body {
 	}
 
 	.yellow-card {
-		background-color: #f1bd48;
+		background-color: $site-yellow;
 	}
 
 	.brown-card {
-		background-color: #51312d;
+		background-color: $site-brown;
 	}
 }
 
@@ -154,7 +160,7 @@ body {
 			width: 32rem;
 			margin-top: 35vh;
 			margin-right: 18vw;
-			background-color: #f1bd48;
+			background-color: $site-yellow;
 			border-radius: 50%;
 			padding: 5rem 3.5rem;
 			text-align: center;
@@ -171,7 +177,7 @@ body {
 				font-size: 3rem;
 				font-weight: 700;
 				background-color: #461712;
-				color: #f1bd48;
+				color: $site-yellow;
 				border-radius: 1rem;
 				margin: 0;
 				margin-bottom: 4rem;
@@ -182,16 +188,127 @@ body {
 }
 
 .home-join-family {
+	padding: 7.5rem 0;
+	position: relative;
+	overflow: hidden;
+
+	.burger-background {
+		opacity: 0.18;
+		top: 0;
+		left: 0;
+		position: absolute;
+		object-fit: cover; // Responsive background
+		object-position: 50% 50%;
+		z-index: -1;
+	}
+
 	.headline-rows {
 		-webkit-transform: rotate(5deg);
 		-ms-transform: rotate(5deg);
 		transform: rotate(5deg);
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		width: 50rem;
+		max-width: 100%;
+
+		h3 {
+			font-size: 6rem;
+			font-weight: 700;
+			line-height: 1;
+		}
+
+		.top-row {
+			text-align: right;
+			padding-right: 5rem;
+			color: $site-brown;
+		}
+
+		.middle-row {
+			text-align: left;
+			color: $site-brown;
+		}
+
+		.bottom-row {
+			text-align: right;
+			color: $site-yellow;
+		}
 	}
 
 	.join-button {
 		display: flex;
+		flex-direction: column;
 		align-items: center;
-		background-color: #461712;
-		color: #f1bd48;
+		justify-content: center;
+		background-color: $site-brown;
+		color: $site-yellow;
+		width: 22rem;
+		height: 5rem;
+		margin: auto;
+		margin-top: 3rem;
+		border-radius: 5rem;
+		font-size: 3rem;
+	}
+}
+
+.home-join-club {
+	padding: 2.5rem 10rem;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	background-color: $site-brown;
+
+	.left-column {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.headline-rows {
+		-webkit-transform: rotate(-5deg);
+		-ms-transform: rotate(-5deg);
+		transform: rotate(-5deg);
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		width: 42rem;
+
+		h3 {
+			font-size: 6rem;
+			font-weight: 700;
+			line-height: 1;
+			margin: 0;
+		}
+
+		.top-row {
+			text-align: center;
+			padding-right: 5rem;
+			color: $site-yellow;
+		}
+
+		.middle-row {
+			text-align: left;
+			color: $site-yellow;
+		}
+
+		.bottom-row {
+			text-align: right;
+			color: $secondary;
+		}
+	}
+
+	.join-button {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: $site-yellow;
+		color: $site-brown;
+		width: 22rem;
+		height: 5rem;
+		margin: 0 auto;
+		margin-top: 3rem;
+		border-radius: 5rem;
+		font-size: 3rem;
 	}
 }
