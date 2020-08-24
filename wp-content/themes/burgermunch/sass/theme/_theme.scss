@@ -2,6 +2,9 @@ $secondary: #f4ebb5;
 $navbar-height: 6rem;
 $site-yellow: #f1bd48;
 $site-brown: #461712;
+$site-red: #ef6632;
+
+// General CSS rules for the website
 
 html {
 	height: 100%;
@@ -29,8 +32,39 @@ a:hover {
 	padding: 0;
 }
 
-// Card link general CSS rules:
+// Site-wide CSS classes
 
+.burger-background {
+	opacity: 0.18;
+	top: 0;
+	left: 0;
+	position: absolute;
+	object-fit: cover; // Responsive background
+	object-position: 50% 50%;
+	z-index: -1;
+}
+
+.page-title-section {
+	height: 38rem;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	.page-title {
+		font-size: 10rem;
+		color: $site-brown;
+		-webkit-transform: rotate(3deg);
+		-ms-transform: rotate(3deg);
+		transform: rotate(3deg);
+	}
+}
+
+// Class specific CSS rules
+
+// Card link general CSS rules:
 .card-link {
 	margin: 0;
 	padding: 0;
@@ -192,16 +226,6 @@ a:hover {
 	position: relative;
 	overflow: hidden;
 
-	.burger-background {
-		opacity: 0.18;
-		top: 0;
-		left: 0;
-		position: absolute;
-		object-fit: cover; // Responsive background
-		object-position: 50% 50%;
-		z-index: -1;
-	}
-
 	.headline-rows {
 		-webkit-transform: rotate(5deg);
 		-ms-transform: rotate(5deg);
@@ -310,5 +334,22 @@ a:hover {
 		margin-top: 3rem;
 		border-radius: 5rem;
 		font-size: 3rem;
+	}
+}
+
+.delivery-number-section {
+	height: 20rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.delivery-number {
+		font-size: 7.5rem;
+		font-weight: 700;
+		color: $site-yellow;
+
+		.red-text {
+			color: $site-red;
+		}
 	}
 }
