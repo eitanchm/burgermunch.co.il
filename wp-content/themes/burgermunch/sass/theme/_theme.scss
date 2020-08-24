@@ -353,3 +353,55 @@ a:hover {
 		}
 	}
 }
+
+.restaurant-menu-section {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	background-color: $secondary;
+
+	.menu-row {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-top: -20rem;
+
+		.menu-tab {
+			border-radius: 50%;
+			height: 65rem;
+			width: 65rem;
+		}
+
+		.yellow-menu-circle {
+			background-color: $site-yellow;
+			margin-right: -3rem;
+		}
+
+		.brown-menu-circle {
+			background-color: $site-brown;
+			margin-left: -3rem;
+		}
+
+		.filler-red-circle {
+			background-color: $site-red;
+			border-radius: 50%;
+			width: 20rem;
+			height: 20rem;
+			align-self: center;
+		}
+
+		.left-filler-circle {
+			margin-left: 20rem;
+		}
+
+		.right-filler-circle {
+			margin-right: 20rem;
+		}
+	}
+
+	.menu-row:first-of-type {
+		margin-top: 0;
+	}
+}
