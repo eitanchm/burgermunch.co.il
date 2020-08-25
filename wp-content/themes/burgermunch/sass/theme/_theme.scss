@@ -4,6 +4,11 @@ $site-yellow: #f1bd48;
 $site-brown: #461712;
 $site-red: #ef6632;
 
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
 // General CSS rules for the website
 
 html {
@@ -41,6 +46,8 @@ a:hover {
 	position: absolute;
 	object-fit: cover; // Responsive background
 	object-position: 50% 50%;
+	min-width: 100%;
+	min-height: 100%;
 	z-index: -1;
 }
 
@@ -372,6 +379,32 @@ a:hover {
 			border-radius: 50%;
 			height: 65rem;
 			width: 65rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			@media screen and (min-width: $xl) {
+				.menu-image-1 {
+					height: 35rem;
+					width: auto;
+				}
+
+				.menu-image-2 {
+					height: 68rem;
+					width: auto;
+					margin-top: -15rem;
+				}
+
+				.menu-image-3 {
+					height: 47.5rem;
+					width: auto;
+				}
+
+				.menu-image-4 {
+					height: 45rem;
+					width: auto;
+				}
+			}
 		}
 
 		.yellow-menu-circle {
@@ -390,6 +423,11 @@ a:hover {
 			width: 20rem;
 			height: 20rem;
 			align-self: center;
+			z-index: 10;
+		}
+
+		.first-filler {
+			margin-top: -5rem;
 		}
 
 		.left-filler-circle {

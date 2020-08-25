@@ -36,20 +36,28 @@ get_header();
 
 <section class="restaurant-menu-section">
     <div class="menu-row">
-        <div class="yellow-menu-circle menu-tab"></div>
+        <div class="yellow-menu-circle menu-tab">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/menu-item-1.png" alt="" class="menu-image-1">
+        </div>
+        <div class="filler-red-circle left-filler-circle first-filler"></div>
+    </div>
+    <div class="menu-row">
+        <div class="filler-red-circle right-filler-circle"></div>
+        <div class="brown-menu-circle menu-tab">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/menu-item-2.png" alt="" class="menu-image-2">
+        </div>
+    </div>
+    <div class="menu-row">
+        <div class="yellow-menu-circle menu-tab">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/menu-item-3.png" alt="" class="menu-image-3">
+        </div>
         <div class="filler-red-circle left-filler-circle"></div>
     </div>
     <div class="menu-row">
         <div class="filler-red-circle right-filler-circle"></div>
-        <div class="brown-menu-circle menu-tab"></div>
-    </div>
-    <div class="menu-row">
-        <div class="yellow-menu-circle menu-tab"></div>
-        <div class="filler-red-circle left-filler-circle"></div>
-    </div>
-    <div class="menu-row">
-        <div class="filler-red-circle right-filler-circle"></div>
-        <div class="brown-menu-circle menu-tab"></div>
+        <div class="brown-menu-circle menu-tab">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/menu-item-4.png" alt="" class="menu-image-4">
+        </div>
     </div>
 </section>
 
