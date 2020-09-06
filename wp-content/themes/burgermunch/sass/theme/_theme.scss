@@ -367,6 +367,7 @@ a:hover {
 	flex-direction: column;
 	flex-wrap: wrap;
 	background-color: $secondary;
+	padding-bottom: 16rem;
 
 	.menu-row {
 		width: 100%;
@@ -441,5 +442,32 @@ a:hover {
 
 	.menu-row:first-of-type {
 		margin-top: 0;
+	}
+}
+
+// Footer section
+
+.footer-wrapper {
+	.footer-top {
+		height: 16rem;
+		padding: 1rem 0;
+		background-color: $site-brown;
+		display: flex;
+		align-content: center;
+		justify-content: center;
+
+		.footer-link {
+			display: flex;
+			height: 100%;
+
+			.footer-icon {
+				height: 100%;
+			}
+		}
+	}
+
+	.footer-bottom {
+		height: 4rem;
+		background-color: $site-yellow;
 	}
 }
