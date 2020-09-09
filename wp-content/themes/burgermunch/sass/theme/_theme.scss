@@ -11,14 +11,22 @@ $xl: 1200px;
 
 // General CSS rules for the website
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
 html {
 	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
 	margin: 0;
 	padding: 0;
 }
 
 body {
 	height: 100%;
+	width: 100%;
 	overflow-x: hidden;
 	background-color: #ffffff;
 	font-family: Arial, Helvetica, sans-serif;
@@ -82,7 +90,6 @@ a:hover {
 }
 
 #main-nav {
-	height: $navbar-height;
 	background-color: $secondary;
 	display: flex;
 
@@ -126,11 +133,37 @@ a:hover {
 	}
 }
 
+@media screen and (max-width: $md) {
+	#main-nav {
+		#main-menu {
+			li {
+				padding: 0;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $md + 1) {
+	#main-nav {
+		height: $navbar-height;
+	}
+}
+
 .home-main-carousel {
 	.home-banner {
 		.banner-img {
 			min-width: 100%;
 			margin-top: -3rem;
+		}
+	}
+}
+
+@media screen and (max-width: $md) {
+	.home-main-carousel {
+		.banner-img {
+			object-fit: cover;
+			height: 30rem;
+			object-position: 20% 20%;
 		}
 	}
 }
@@ -223,6 +256,26 @@ a:hover {
 				margin: 0;
 				margin-bottom: 4rem;
 				padding: 0;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $md) {
+	.home-branches-section {
+		.container-branches {
+			.card-link {
+				height: 24rem;
+				width: 24rem;
+				margin: 35vh auto;
+
+				.top-text {
+					font-size: 6rem;
+				}
+
+				.bottom-text {
+					font-size: 2rem;
+				}
 			}
 		}
 	}
