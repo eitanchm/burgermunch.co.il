@@ -265,9 +265,10 @@ a:hover {
 	.home-branches-section {
 		.container-branches {
 			.card-link {
-				height: 24rem;
-				width: 24rem;
+				height: 22rem;
+				width: 22rem;
 				margin: 35vh auto;
+				padding: 5rem 2rem;
 
 				.top-text {
 					font-size: 6rem;
@@ -335,6 +336,29 @@ a:hover {
 	}
 }
 
+@media screen and (max-width: $md) {
+	.home-join-family {
+		.headline-rows {
+			h3 {
+				font-size: 5rem;
+			}
+
+			.top-row {
+				text-align: center;
+				padding: 0;
+			}
+
+			.middle-row {
+				text-align: center;
+			}
+
+			.bottom-row {
+				text-align: center;
+			}
+		}
+	}
+}
+
 .home-join-club {
 	padding: 2.5rem 10rem;
 	display: flex;
@@ -394,6 +418,35 @@ a:hover {
 		margin-top: 3rem;
 		border-radius: 5rem;
 		font-size: 3rem;
+	}
+}
+
+@media screen and (max-width: $md) {
+	.home-join-club {
+		padding: 2.5rem 0;
+		flex-direction: column;
+
+		.headline-rows {
+			width: 21rem;
+
+			.top-row {
+				text-align: center;
+				padding: 0;
+			}
+
+			.middle-row {
+				text-align: center;
+			}
+
+			.bottom-row {
+				text-align: center;
+			}
+		}
+
+		.right-column {
+			width: 15rem;
+			align-self: center;
+		}
 	}
 }
 
