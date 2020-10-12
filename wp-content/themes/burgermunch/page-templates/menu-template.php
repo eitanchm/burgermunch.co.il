@@ -27,7 +27,7 @@ get_header();
 <!-- Start delivery number section -->
 
 <section class="delivery-number-section">
-    <h2 class="delivery-number">למשלוחים חייגו>> <span class="red-text">*2395</span> </h2>
+    <img src="<?php echo get_template_directory_uri(); ?>/img/delivery-number.png" alt="">
 </section>
 
 <!-- End delivery number section -->
@@ -38,11 +38,20 @@ get_header();
     <div class="menu-row">
         <div class="yellow-menu-circle menu-tab">
             <img src="<?php echo get_template_directory_uri(); ?>/img/menu-item-1.png" alt="" class="menu-image-1">
+            <div class="burger-toppings">
+                <div class="red-circle">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/burger-topping-1" alt="">
+                </div>
+                <div class="red-circle">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/burger-topping-2" alt="">
+                </div>
+                <div class="red-circle">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/burger-topping-3" alt="">
+                </div>
+            </div>
         </div>
-        <div class="filler-red-circle left-filler-circle first-filler"></div>
     </div>
-    <div class="menu-row">
-        <div class="filler-red-circle right-filler-circle"></div>
+    <div class="menu-row reverse-row">
         <div class="brown-menu-circle menu-tab">
             <img src="<?php echo get_template_directory_uri(); ?>/img/menu-item-2.png" alt="" class="menu-image-2">
         </div>
@@ -51,10 +60,8 @@ get_header();
         <div class="yellow-menu-circle menu-tab">
             <img src="<?php echo get_template_directory_uri(); ?>/img/menu-item-3.png" alt="" class="menu-image-3">
         </div>
-        <div class="filler-red-circle left-filler-circle"></div>
     </div>
-    <div class="menu-row">
-        <div class="filler-red-circle right-filler-circle"></div>
+    <div class="menu-row reverse-row">
         <div class="brown-menu-circle menu-tab">
             <img src="<?php echo get_template_directory_uri(); ?>/img/menu-item-4.png" alt="" class="menu-image-4">
         </div>

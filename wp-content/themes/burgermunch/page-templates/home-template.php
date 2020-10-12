@@ -28,43 +28,23 @@ get_header();
 
 <section class="home-card-section row">
     <a href="/תפריט" class="card-link">
-        <div class="card brown-card col-sm4">
-            <i class="fa fa-check-circle card-icon"></i>
-            <div class="text-wrap">
-                <h3 class="card-text">תפריט</h3>
-                <div class="div-line"></div>
-                <h3 class="card-text">MENU</h3>
-            </div>
+        <div class="card col-sm4">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/menu.png" alt="">
         </div>
     </a>
     <a href="/צור-קשר" class="card-link">
-        <div class="card yellow-card col-sm4">
-            <i class="fa fa-check-circle card-icon"></i>
-            <div class="text-wrap">
-                <h3 class="card-text">משלוחים</h3>
-                <div class="div-line"></div>
-                <h3 class="card-text">DELIVERY</h3>
-            </div>
+        <div class="card col-sm4">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/deliveries.png" alt="">
         </div>
     </a>
     <a href="/החדשים" class="card-link">
-        <div class="card brown-card col-sm4">
-            <i class="fa fa-check-circle card-icon"></i>
-            <div class="text-wrap">
-                <h3 class="card-text">מאנץ' חדש</h3>
-                <div class="div-line"></div>
-                <h3 class="card-text">NEW MUNCH</h3>
-            </div>
+        <div class="card col-sm4">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/new-munch.png" alt="">
         </div>
     </a>
     <a href="/צור-קשר" class="card-link">
-        <div class="card yellow-card col-sm4">
-            <i class="fa fa-check-circle card-icon"></i>
-            <div class="text-wrap">
-                <h3 class="card-text">מועדון</h3>
-                <div class="div-line"></div>
-                <h3 class="card-text">CLUB</h3>
-            </div>
+        <div class="card col-sm4">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/club.png" alt="">
         </div>
     </a>
 </section>

@@ -30,31 +30,13 @@ $container = get_theme_mod('understrap_container_type');
         <!-- ******************* The Navbar Area ******************* -->
         <div id="wrapper-navbar">
 
-            <nav id="main-nav" class="navbar navbar-expand-md" aria-labelledby="main-nav-label">
+            <nav id="main-nav" class="navbar navbar-expand-lg" aria-labelledby="main-nav-label">
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="<?php esc_attr_e('Toggle navigation', 'understrap'); ?>">
-                    <span class="navbar-toggler-icon">
-                        <i class="fa fa-bars"></i>
-                    </span>
+                    <i class="fa fa-bars"></i>
                 </button>
-
-                <!-- The WordPress Menu goes here -->
-                <?php
-                wp_nav_menu(
-                    array(
-                        'theme_location'  => 'primary',
-                        'container_class' => 'collapse navbar-collapse',
-                        'container_id'    => 'navbarNavDropdown',
-                        'menu_class'      => 'navbar-nav ml-auto',
-                        'fallback_cb'     => '',
-                        'menu_id'         => 'main-menu',
-                        'depth'           => 2,
-                        'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
-                    )
-                );
-                ?>
 
                 <!-- Start site branding / custom logo -->
                 <?php if (!has_custom_logo()) { ?>
@@ -77,6 +59,22 @@ $container = get_theme_mod('understrap_container_type');
                     the_custom_logo();
                 } ?>
                 <!-- end custom logo and site branding -->
+
+                <!-- The WordPress Menu goes here -->
+                <?php
+                wp_nav_menu(
+                    array(
+                        'theme_location'  => 'primary',
+                        'container_class' => 'collapse navbar-collapse',
+                        'container_id'    => 'navbarNavDropdown',
+                        'menu_class'      => 'navbar-nav ml-auto',
+                        'fallback_cb'     => '',
+                        'menu_id'         => 'main-menu',
+                        'depth'           => 2,
+                        'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+                    )
+                );
+                ?>
 
             </nav><!-- .site-navigation -->
 
