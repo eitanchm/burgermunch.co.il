@@ -77,6 +77,16 @@ a:hover {
 	}
 }
 
+@media screen and (max-width: $md) {
+	.page-title-section {
+		height: 24rem;
+
+		.page-title {
+			font-size: 8rem;
+		}
+	}
+}
+
 // Class specific CSS rules
 
 // Card link general CSS rules:
@@ -549,27 +559,25 @@ a:hover {
 				}
 			}
 
-			@media screen and (min-width: $xl) {
-				.menu-image-1 {
-					height: 35rem;
-					width: auto;
-				}
+			.menu-image-1 {
+				height: 35rem;
+				width: auto;
+			}
 
-				.menu-image-2 {
-					height: 68rem;
-					width: auto;
-					margin-top: -15rem;
-				}
+			.menu-image-2 {
+				height: 68rem;
+				width: auto;
+				margin-top: -15rem;
+			}
 
-				.menu-image-3 {
-					height: 47.5rem;
-					width: auto;
-				}
+			.menu-image-3 {
+				height: 47.5rem;
+				width: auto;
+			}
 
-				.menu-image-4 {
-					height: 45rem;
-					width: auto;
-				}
+			.menu-image-4 {
+				height: 45rem;
+				width: auto;
 			}
 		}
 
@@ -583,6 +591,7 @@ a:hover {
 			background-color: $site-brown;
 			margin-left: -3rem;
 			justify-self: space-between;
+			overflow: hidden;
 		}
 	}
 
@@ -595,8 +604,50 @@ a:hover {
 	}
 }
 
-@media screen and (max-width: $md) {
+@media screen and (max-width: $sm) {
 	.restaurant-menu-section {
+		padding-bottom: 8rem;
+
+		.menu-row {
+			margin-top: 1.25rem;
+
+			.menu-tab {
+				height: 28rem;
+				width: 28rem;
+
+				.burger-toppings {
+					.red-circle {
+						height: 6rem;
+						width: 6rem;
+						margin-top: 0;
+						margin-left: 0.25rem;
+						margin-right: 0.25rem;
+						padding: 0.5rem;
+					}
+				}
+
+				.menu-image-1 {
+					height: 15rem;
+					width: auto;
+				}
+
+				.menu-image-2 {
+					height: 30rem;
+					width: auto;
+					margin-top: -5rem;
+				}
+
+				.menu-image-3 {
+					height: 20rem;
+					width: auto;
+				}
+
+				.menu-image-4 {
+					height: 20rem;
+					width: auto;
+				}
+			}
+		}
 	}
 }
 
