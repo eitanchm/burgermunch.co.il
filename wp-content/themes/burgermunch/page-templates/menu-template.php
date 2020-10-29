@@ -40,13 +40,13 @@ get_header();
             <img src="<?php echo get_template_directory_uri(); ?>/img/menu-item-1.png" alt="" class="menu-image-1">
             <div class="burger-toppings">
                 <div class="red-circle">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/burger-topping-1" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/burger-topping-1.png" alt="">
                 </div>
                 <div class="red-circle">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/burger-topping-2" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/burger-topping-2.png" alt="">
                 </div>
                 <div class="red-circle">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/burger-topping-3" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/burger-topping-3.png" alt="">
                 </div>
             </div>
         </div>

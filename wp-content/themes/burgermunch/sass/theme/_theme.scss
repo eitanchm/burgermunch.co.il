@@ -291,9 +291,7 @@ a:hover {
 			width: 32rem;
 			margin-top: 35vh;
 			margin-right: 18vw;
-			background-color: $site-yellow;
 			border-radius: 50%;
-			padding: 5rem 3.5rem;
 			text-align: center;
 
 			.top-text {
@@ -320,11 +318,13 @@ a:hover {
 
 @media screen and (max-width: $md) {
 	.home-branches-section {
+		height: 50%;
+
 		.container-branches {
 			.card-link {
 				height: 22rem;
 				width: 22rem;
-				margin: 35vh auto;
+				margin: 10vh auto;
 				padding: 5rem 2rem;
 
 				.top-text {
@@ -349,36 +349,14 @@ a:hover {
 	overflow: hidden;
 
 	.headline-rows {
-		-webkit-transform: rotate(5deg);
-		-ms-transform: rotate(5deg);
-		transform: rotate(5deg);
+		-webkit-transform: rotate(4deg);
+		-ms-transform: rotate(4deg);
+		transform: rotate(4deg);
 		margin: auto;
 		display: flex;
 		flex-direction: column;
 		width: 50rem;
 		max-width: 100%;
-
-		h3 {
-			font-size: 6rem;
-			font-weight: 700;
-			line-height: 1;
-		}
-
-		.top-row {
-			text-align: right;
-			padding-right: 5rem;
-			color: $site-brown;
-		}
-
-		.middle-row {
-			text-align: left;
-			color: $site-brown;
-		}
-
-		.bottom-row {
-			text-align: right;
-			color: $site-yellow;
-		}
 	}
 
 	.join-button {
@@ -399,23 +377,13 @@ a:hover {
 
 @media screen and (max-width: $md) {
 	.home-join-family {
-		.headline-rows {
-			h3 {
-				font-size: 5rem;
-			}
+		padding: 4rem 0;
 
-			.top-row {
-				text-align: center;
-				padding: 0;
-			}
-
-			.middle-row {
-				text-align: center;
-			}
-
-			.bottom-row {
-				text-align: center;
-			}
+		.join-button {
+			width: 15rem;
+			height: 4rem;
+			font-size: 2rem;
+			margin-top: 2rem;
 		}
 	}
 }
@@ -425,7 +393,7 @@ a:hover {
 // Start home join club section CSS
 
 .home-join-club {
-	padding: 2.5rem 10rem;
+	padding: 2.5rem 0;
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: space-between;
@@ -437,37 +405,25 @@ a:hover {
 		justify-content: center;
 	}
 
+	.right-column {
+		display: flex;
+		align-content: center;
+
+		img {
+			flex-shrink: 0;
+			align-self: center;
+		}
+	}
+
 	.headline-rows {
-		-webkit-transform: rotate(-5deg);
-		-ms-transform: rotate(-5deg);
-		transform: rotate(-5deg);
+		-webkit-transform: rotate(-3deg);
+		-ms-transform: rotate(-3deg);
+		transform: rotate(-3deg);
 		margin: 0 auto;
 		display: flex;
 		flex-direction: column;
 		width: 42rem;
-
-		h3 {
-			font-size: 6rem;
-			font-weight: 700;
-			line-height: 1;
-			margin: 0;
-		}
-
-		.top-row {
-			text-align: center;
-			padding-right: 5rem;
-			color: $site-yellow;
-		}
-
-		.middle-row {
-			text-align: left;
-			color: $site-yellow;
-		}
-
-		.bottom-row {
-			text-align: right;
-			color: $secondary;
-		}
+		max-width: 100%;
 	}
 
 	.join-button {
@@ -508,10 +464,29 @@ a:hover {
 			}
 		}
 
+		.join-button {
+			width: 15rem;
+			height: 4rem;
+			font-size: 2rem;
+			margin-top: 2rem;
+		}
+
 		.right-column {
 			width: 15rem;
 			align-self: center;
 		}
+	}
+}
+
+@media screen and (min-width: $md + 1) {
+	.home-join-club {
+		padding: 2.5rem 2rem;
+	}
+}
+
+@media screen and (min-width: $xl) {
+	.home-join-club {
+		padding: 2.5rem 10rem;
 	}
 }
 
@@ -561,7 +536,7 @@ a:hover {
 					padding: 1rem;
 					margin-left: 1rem;
 					margin-right: 1rem;
-					margin-top: 7rem;
+					margin-top: 5rem;
 					margin-bottom: -20rem;
 					background-color: $site-red;
 					align-content: center;
@@ -620,8 +595,12 @@ a:hover {
 	}
 }
 
-// Footer section
+@media screen and (max-width: $md) {
+	.restaurant-menu-section {
+	}
+}
 
+// Footer section
 .footer-wrapper {
 	.footer-top {
 		height: 16rem;

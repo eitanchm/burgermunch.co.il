@@ -56,8 +56,7 @@ get_header();
 <section class="home-branches-section">
     <div class="container-branches">
         <a href="/סניפים" class="card-link">
-            <p class="top-text">סניפים</p>
-            <p class="bottom-text">למסעדות לחץ כאן</p>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/branches.png" alt="">
         </a>
     </div>
 </section>
@@ -68,9 +67,7 @@ get_header();
 
 <section class="home-join-family">
     <div class="headline-rows">
-        <h3 class="top-row">רוצה להיות</h3>
-        <h3 class="middle-row">חלק ממשפחת</h3>
-        <h3 class="bottom-row">בורגר מאנץ'?</h3>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/burgermunch-family-text.png" alt="">
     </div>
     <a href="#" class="join-button">להצטרפות</a>
     <img src="<?php echo get_template_directory_uri(); ?>/img/burger-background.png"
@@ -84,9 +81,7 @@ get_header();
 <section class="home-join-club">
     <div class="left-column">
         <div class="headline-rows">
-            <h3 class="top-row">רוצה להיות</h3>
-            <h3 class="middle-row">חבר מועדון</h3>
-            <h3 class="bottom-row">בורגר מאנץ'?</h3>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/home-join-club.png" alt="">
         </div>
         <a href="#" class="join-button">להצטרפות</a>
     </div>
