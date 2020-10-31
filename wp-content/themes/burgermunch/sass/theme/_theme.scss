@@ -48,7 +48,7 @@ a:hover {
 // Site-wide CSS classes
 
 .burger-background {
-	opacity: 0.18;
+	opacity: 0.25;
 	top: 0;
 	left: 0;
 	position: absolute;
@@ -517,18 +517,18 @@ a:hover {
 	flex-direction: column;
 	flex-wrap: wrap;
 	background-color: $secondary;
-	padding-bottom: 16rem;
+	padding-bottom: 10vw;
 
 	.menu-row {
 		width: 100%;
 		display: flex;
 		flex-direction: row;
-		margin-top: -20rem;
+		margin-top: -15vw;
 
 		.menu-tab {
 			border-radius: 50%;
-			height: 65rem;
-			width: 65rem;
+			height: 55vw;
+			width: 55vw;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -540,14 +540,14 @@ a:hover {
 
 				.red-circle {
 					display: flex;
-					height: 15rem;
-					width: 15rem;
+					height: 10vw;
+					width: 10vw;
 					border-radius: 50%;
-					padding: 1rem;
-					margin-left: 1rem;
-					margin-right: 1rem;
-					margin-top: 5rem;
-					margin-bottom: -20rem;
+					padding: 1vw;
+					margin-left: 1vw;
+					margin-right: 1vw;
+					margin-top: 2vw;
+					margin-bottom: -15vw;
 					background-color: $site-red;
 					align-content: center;
 					justify-content: center;
@@ -560,23 +560,23 @@ a:hover {
 			}
 
 			.menu-image-1 {
-				height: 35rem;
+				height: 30vw;
 				width: auto;
 			}
 
 			.menu-image-2 {
-				height: 68rem;
+				height: 53vw;
 				width: auto;
-				margin-top: -15rem;
+				margin-top: -12vw;
 			}
 
 			.menu-image-3 {
-				height: 47.5rem;
+				height: 40vw;
 				width: auto;
 			}
 
 			.menu-image-4 {
-				height: 45rem;
+				height: 40vw;
 				width: auto;
 			}
 		}
@@ -644,6 +644,53 @@ a:hover {
 
 				.menu-image-4 {
 					height: 20rem;
+					width: auto;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $md) and (min-width: $sm + 1) {
+	.restaurant-menu-section {
+		padding-bottom: 8rem;
+
+		.menu-row {
+			margin-top: -2.25rem;
+
+			.menu-tab {
+				height: 35rem;
+				width: 35rem;
+
+				.burger-toppings {
+					.red-circle {
+						height: 8rem;
+						width: 8rem;
+						margin-top: 0;
+						margin-left: 0.5rem;
+						margin-right: 0.5rem;
+						padding: 0.5rem;
+					}
+				}
+
+				.menu-image-1 {
+					height: 19rem;
+					width: auto;
+				}
+
+				.menu-image-2 {
+					height: 36rem;
+					width: auto;
+					margin-top: -7.5rem;
+				}
+
+				.menu-image-3 {
+					height: 25rem;
+					width: auto;
+				}
+
+				.menu-image-4 {
+					height: 25rem;
 					width: auto;
 				}
 			}
