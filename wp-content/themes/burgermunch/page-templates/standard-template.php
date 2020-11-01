@@ -24,5 +24,28 @@ get_header();
 
 <!-- End page title section -->
 
+<div class="wrapper" id="page-wrapper">
+
+    <div class="<?php echo esc_attr($container); ?>" id="content" tabindex="-1">
+
+        <div class="row row-align-center">
+
+            <main class="site-main" id="main">
+
+                <?php
+                while (have_posts()) {
+                    the_post();
+                    get_template_part('loop-templates/content', 'page');
+                }
+                ?>
+
+            </main><!-- #main -->
+
+        </div><!-- .row -->
+
+    </div><!-- #content -->
+
+</div><!-- #page-wrapper -->
+
 <?php
 get_footer();

@@ -87,6 +87,11 @@ a:hover {
 	}
 }
 
+.row-align-center {
+	justify-content: center;
+	margin: 0;
+}
+
 // Class specific CSS rules
 
 // Card link general CSS rules:
@@ -502,7 +507,7 @@ a:hover {
 
 // End home join club section CSS
 
-// Restaurant menu page
+// Start restaurant menu page
 
 .delivery-number-section {
 	height: 20rem;
@@ -697,6 +702,28 @@ a:hover {
 		}
 	}
 }
+
+// End restaurant menu page
+
+// Start custom random CSS
+
+.about-us-buttons {
+	margin-top: 4rem;
+	margin-bottom: 2rem;
+
+	.wp-block-button {
+		margin: 0 2rem;
+	}
+
+	.wp-block-button__link {
+		width: 12rem;
+		font-size: 2rem;
+		font-weight: lighter;
+		padding: 0.5rem 0;
+	}
+}
+
+// End custom random CSS
 
 // Footer section
 .footer-wrapper {
